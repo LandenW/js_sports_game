@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css">
+  <title>JS Game Challenge</title>
+</head>
+<body>
+  <div id="main">
+
+    <div id="header">
+    <h1>Cowboys VS Native Americans</h1>
+      <button id="reset">RESET</button><br>
+      NUMBER OF RESETS: <span id="num-resets">0</span>
+    </div>
+
+    <div id="secondary">
+      <div class="cbna">
+        <h2>
+          Cowboys
+        </h2>
+        <img class="icon" src="assets/images/cbicon.png">
+        <div class="hits">
+          SHOTS FIRED: <span id="teamone-numshots">0</span><br>
+          HITS: <span id="teamone-numhits">0</span>
+          <audio id="shot1">
+            <source src="assets/audio/shot1.wav" type="audio/wav">
+          </audio>
+        </div>
+        <div>
+          <button id="teamone-shoot">SHOOT</button>
+        </div>
+      </div>
+
+      <div class="cbna">
+        <h2>
+          Native Americans
+        </h2>
+        <img class="icon" src="assets/images/naicon.jpg">
+        <div class="hits">
+          SHOTS FIRED: <span id="teamtwo-numshots">0</span><br>
+          HITS: <span id="teamtwo-numhits">0</span>
+          <audio id="shot2">
+            <source src="assets/audio/shot2.wav" type="audio/wav">
+          </audio>
+        </div>
+        <div>
+          <button id="teamtwo-shoot">SHOOT</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<script src="assets/javascripts/game.js"></script>
+</body>
+</html>
